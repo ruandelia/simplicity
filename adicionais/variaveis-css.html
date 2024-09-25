@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variaveis no css</title>
+<style>
+    /* declarando variavéis usando seletor pseudo-classe :hoot  */
+
+    :root {
+        --cor: orange;
+        --bordaredonda: 100px 50px 25px 12px;
+        --corfundo: linear-gradient(black, red);
+   
+    }
+    h1{
+        /* background-color: var(--cor); */
+        padding-left: 10px ;
+        border-radius: var(--bordaredonda);
+        background: var(--corfundo);
+      
+    }
+
+    h2{
+        border: 1px solid var(--cor);
+        background-color: var(--cor);
+        padding-left: 10px;
+    }
+
+    p{
+        text-shadow: var(--cor) 1px 1px 10px ;
+    }
+</style>
+</head>
+<body>
+    <h1>usando variavéis no CSS</h1>
+    <hr>
+    <h2>front-end</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque corporis, quam reiciendis ea laboriosam velit, optio sint culpa natus eius cum sequi sed in ipsam voluptatum, tenetur asperiores aliquid nostrum!</p>
+
+    <h2>back-end</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex, consequatur iusto corrupti adipisci </p>
+
+</body>
+</html>
