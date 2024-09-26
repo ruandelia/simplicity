@@ -1,11 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     box-sizing: border-box;
 }
+/* declaração de variavéis (sempre no root) */
+:root{
+
+    --cor-titulo : #4d4d4d;
+    --cor-texto : #333;
+    --cor-escura : #000;
+    --cor-clara : #fff;
+    --cor-intermediaria : #ecececec;
+}
+
 body, h1, h2, p, figure, .links-menu{
     margin: 0;
     padding: 0;
 } 
+body{
+    font-family: 'noto sans', sans-serif;
+    color: var(--cor-texto);
+}
 img{
-    max-width: 100%;
+    max-width: 100%
+} 
+
+a{
+    text-decoration: none;
 }
 
+.titulo{
+    font-family: raleway, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800; /*isto equivale a fonte extrabold*/
+    font-size: 1.5rem;
+    color: var(--cor-titulo);
+}
