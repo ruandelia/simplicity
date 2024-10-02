@@ -84,3 +84,16 @@ a{
     width: 100vw;
     left: 0;
 }
+
+
+
+.destaque{
+    height: 50vh;
+    background-image: url(../imagens/fundo-destaque.jpg);
+    color: var(--cor-clara);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-attachment: fixed;
+}
